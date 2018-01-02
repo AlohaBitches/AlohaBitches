@@ -113,7 +113,7 @@ ul li a{ box-shadow: 0px 5px 1px #DAA520; }
     background-color: inherit;
     float: left;
     border: none;
-    outline: none;
+    outline: grey;
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
@@ -135,5 +135,9 @@ ul li a{ box-shadow: 0px 5px 1px #DAA520; }
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+    background-color: white;
+					box-shadow: 0px 1px 1px #666;
+
+
 }
 
