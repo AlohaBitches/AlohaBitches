@@ -66,11 +66,49 @@
 		We can't inform you as of right now but we have the most iconic gossip to tell you 😮, stay tuned.
                 </p>
             </section>
+				<section id="item7">
+                <a href="#item7"><h1>Finally</h1></a>
+                <p style="color:red">
+			Finally, the gossip must be <strong>revealed</strong> xoxo. Julia told the public she was going to Italy. Isn't that right? We recall that she mentioned that she would be staying there until the 8th. Well, for now, we can only reveal that - undoubtedly - she has been lying to us. In 1 hour <strong> EVERYTHING WILL BE REVEALED </strong>
+                </p>
+            </section>
 		<div id="footer">
 			<p>
 				Webpage made by <a href="/Me.html" target="_blank">Alh</a>
 			</p>
 		</div>
 	</div>
-</body>
+		<style>
+p {
+  text-align: center;
+  font-size: 60px;
+}
+</style>
+
+<p id="demo"></p>
+
+<script>
+var countDownDate = new Date("Jan 2, 2018 23:00:00").getTime();
+
+var x = setInterval(function() {
+
+    var now = new Date().getTime();
+    
+    var distance = countDownDate - now;
+    
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    document.getElementById("demo").innerHTML = hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "JULIA HAS BEEN FUCKING BAILEY AT LA DAMA";
+    }
+}, 1000);
+</script>
+
 </html>
